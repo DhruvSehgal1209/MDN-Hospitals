@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDN Hospitals|Home</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=REM&display=swap" rel="stylesheet">
+<body>
+
+    <div class="vwrap"><div class="vmove">
+        <div class="vitem"><p>Welcome to the official website of MDN Hospitals.</p></div>
+        <div class="vitem"><p>We are available 24/7 in your service.</p></div>
+        <div class="vitem"><p>We have the best Doctors and world class equipments.</p></div>
+        <div class="vitem"><p>We have the best labs for precise results.</p></div>
+    </div></div>
+    
+
+    <div class="logo">
+        <img class="Hospitallogo" src="/Hospital_frontend/Images/Logo.png" alt="Hospital Logo" width="120px">
+        <input type="text" placeholder="Search Doctor or Hospital">
+        <ul>
+            <li><img src="/Hospital_frontend/Images/telephone.png" alt="" width="25px">MDN Lifeline: +91 9988422488</li>
+            <li><img src="/Hospital_frontend/Images/mail (1).png" alt="" width="25px">Mail Us: MdnHospitals@gmail.com</li>
+            <li><img src="/Hospital_frontend/Images/linkedin.png" alt="" width="25px"></li>
+            <li><img src="/Hospital_frontend/Images/twitter.png" alt="" width="25px"></li>
+            <li><img src="/Hospital_frontend/Images/youtube.png" alt="" width="25px"></li>
+        </ul>
+    </div>
+
+    <div class="navbar">
+        <ul style="text-align: center;">
+            <li><a href="/Hospital_frontend/index.html">Home</a></li>
+            <li><a href="/Hospital_frontend/hospital_online_appointment/appointment.html">Book Appointment</a></li>
+            <li><a href="/Hospital_frontend/Services.html">Services</a></li>
+            <li><a href="/Hospital_frontend/insurance.html">Health Insurance</a></li>
+            <li><a href="/Hospital_frontend/medicines.html">Buy Medicines</a></li>
+            <li><a href="/Hospital_frontend/login.html">Login/SignUp</a></li>
+        </ul>
+    </div>
+
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+            <img id="slide-1" class="mySlides" src="/Hospital_frontend/Images/The most trusted name in Healthcare (1).png" alt="" height="496px">
+            <img id="slide-2" class="mySlides" src="/Hospital_frontend/Images/The most trusted name in Healthcare.png" alt="" height="496px">
+            <img id="slide-3" class="mySlides" src="/Hospital_frontend/Images/The most trusted name in Healthcare (2).png" alt="" height="496px">
+            <img id="slide-4" class="mySlides" src="/Hospital_frontend/Images/The most trusted name in Healthcare (3).png" alt="" height="496px">
+            </div>
+        </div>
+    </section>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);
+}
+</script>
+
+    <br><br><br>
+    <div class="whychooseus-container-head">
+        <h1 style="text-align: center; font-size: 40px;"><span>Why Choose Us?  </span></h1>
+    <div class="whychooseus-container">
+        <div class="grid-container">
+            <span><img src="/Hospital_frontend/Images/MDN (1).png" alt="" height="90px">
+            <p>We have facility of more than 1000 beds, having proper reclining adjustments so that our patients feel comfortable.</p></span>
+            <span><img src="/Hospital_frontend/Images/MDN (2).png" alt="" height="90px"><p>We have our presence PAN India, with more than 50+ branches of our hospital; each having a great team of doctors to serve the patients</p></span>
+            <span><img src="/Hospital_frontend/Images/MDN.png" alt="" height="90px"><p>Till date we have served more than 10,000 patients; who are now living a happy and healthy life</p></span>  
+            <span><img src="/Hospital_frontend/Images/MDN (4).png" alt="" height="90px"><p>We have highly trained professional team of doctors to look after patient's well being and assure them a better life</p></span>
+            <span><img src="/Hospital_frontend/Images/MDN (5).png" alt="" height="90px"><p>We are among the top hospitals in India; to use highly advance technology for the treatment of our patients </p></span>
+            <span><img src="/Hospital_frontend/Images/MDN (6).png" alt="" height="90px"><p>We pride ourselves on our 25 years of experience in providing exceptional healthcare services to our patients. </p></span>    
+        </div>
+        <img class="side-image" src="/Hospital_frontend/Images/why-img.jpg" alt="">
+    </div>
+    </div>
+
+    <div class="review-form">
+        <div  class="q-container">
+            <h1 style="text-align: center;">MDN Hospitals - Write a Review</h1>
+            <form>
+              <div class="q-rating">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">&#9733;</label>
+              </div>
+              <textarea class="q-review-textarea" placeholder="Write your review here..."></textarea>
+              <button class="q-submit-btn" type="submit">Submit Review</button>
+            </form>
+          </div>
+    </div>
+
+    <footer style="border-top: 1px solid black; position: absolute;">
+        <p style="font-weight: 600;">All Rights Reserved &copy; MDN Hospitals</p>
+        <ul style="font-weight: 100; align-items: center; margin-top: 0.5rem;" >
+            <li><a href="/Hospital_frontend/index.html"><b>Home</b></a></li>
+            <li><a href="/Hospital_frontend/hospital_online_appointment/appointment.html"><b>Book Appointment</b></a></li>
+            <li><a href="/Hospital_frontend/Services.html"><b>Services</b></a></li>
+            <li><a href="/Hospital_frontend/insurance.html"><b>Health Insurance</b></a></li>
+            <li><a href="/Hospital_frontend/medicines.html"><b>Buy Medicines</b></a></li>
+            <li><a href="/Hospital_frontend/login.html"><b>Login/SignUp</b></a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
+
